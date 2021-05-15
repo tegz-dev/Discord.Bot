@@ -55,7 +55,7 @@ async def kick(ctx):
     
     em = discord.Embed(title = "kick", description = "Kicks a member from the guild",color = ctx.author.color)
     
-    em.add_field(name = "**Syntax**", value = "$kick <member> [reason]")
+    em.add_field(name = "**Syntax**", value = ".kick <member> [reason]")
     
     await ctx.send(embed = em)
     
@@ -64,7 +64,16 @@ async def ban(ctx):
     
     em = discord.Embed(title = "ban", description = "Bans a member from the guild",color = ctx.author.color)
     
-    em.add_field(name = "**Syntax**", value = "$ban <member> [reason]")
+    em.add_field(name = "**Syntax**", value = ".ban <member> [reason]")
+    
+    await ctx.send(embed = em)
+
+@help.command()
+async def purge(ctx):
+    
+    em = discord.Embed(title = "purge", description = "Purges an amount of messgaes",color = ctx.author.color)
+    
+    em.add_field(name = "**Syntax**", value = ".purge <amount>")
     
     await ctx.send(embed = em)
     
