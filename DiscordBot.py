@@ -134,9 +134,4 @@ async def purge(ctx, limit: int):
 
 
     
-
-
-            
-            
-        #BOT CONFIG
-client.run("ODM3MzQyNTg5MTc0ODA4NjU2.YIrKDg.IjWKgUG8jpgC_UVhhlqlr1MZeZQ")
+client.run("Insert Token Here")
